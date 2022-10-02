@@ -26,11 +26,11 @@ body::before {
   position: fixed;
   left: 0;
   top: 0;
-  background: rgba(56, 56, 138, 0.9);
+  background: rgba(125, 125, 167, 0.9);
   background-image: linear-gradient(
-      120deg,
-      rgba(72, 72, 154, 0.9),
-      rgba(140, 140, 204, 0.8)
+      115deg,
+      rgba(56, 56, 120, 0.9),
+      rgba(130, 130, 200, 0.8)
     ),
     url(./image/inner-solar-system-planets-johan-swanepoel.jpeg);
   background-position: center;
