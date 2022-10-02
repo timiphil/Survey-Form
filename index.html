@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <title>Best Documentary Form</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+ <div class="container">
+  <header class="header">
+   <h1 id="title" class="text-center">Best Documentary Form</h1>
+   <p id="description" class="description text-center">This is a form to collect information on what human think about the planet earth. 
+   </p>
+  </header>
+  <form id="survey-form">
+   <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input class="form-control" id="name" type="text" name="name" placeholder="Enter your name" required />
+   </div>
+   <div class="form-group">
+    <label id="email-label" for="email">Email</label>
+    <input class="form-control" id="email" type="email" name="email" placeholder="Enter your Email" required />
+   </div>
+   <div class="form-group">
+    <label id="number-label" for="number">Age<span></span class="clue">(optional)</span></span></label>
+    <input class="form-control" id="number" type="number" name="age" min="12" max="100" placeholder="Age" required />
+   </div>
+   <div>
+    <label>Which option best describes your current role?
+     <select id="dropdown" name="role" class="form-control" required>
+      <option disable selected value>Select current role</option>
+      <option value="student">Student</option>
+      <option value="Fjob">Full Time Job</option>
+      <option value="Pjob">Part Time Job</option>
+      <option value="preferNo">Prefer not to say</option>
+      <option value="other">Other</option>
+     </select>
+    </label>
+   </div>
+
+   <div class="form-group">
+    <p>Would you recommend PlanetFormation to a friend?</p>
+    <label>
+     <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
+    <label>
+     <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+    <label>
+     <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+   </div>
+
+   <div class="form-group">
+    <p>What is your favorite planet in the solar system?</p>
+    <select id="favorite-planet" name="favotitePlanet" class="form-control" required>
+     <option disabled selected value>(Select one)</option>
+     <option value="mercury">Mercury</option>
+     <option value="venus">Venus</option>
+     <option value="earth">Earth</option>
+     <option value="mars">Mars</option>
+     <option value="jupiter">Jupiter</option>
+     <option value="saturn">Saturn</option>
+     <option value="uranus">Uranus</option>
+     <option value="neptune">Neptune</option>
+     <option value="pluto">Pluto</option>
+    </select>
+   </div>
+
+   <div>
+    <p>
+     What would you like to see improved?
+     <span class="clue">(Check all that apply)</span>
+    </p>
+
+    <label>
+     <input name="prefer" value="protecting-the-planet" type="checkbox" class="input-checkbox" />Protecting the
+     Planet</label>
+    <label>
+     <input name="prefer" value="space-watch" type="checkbox" class="input-checkbox" />Space Watch</label>
+    <label>
+     <input name="prefer" value="satellite-technology" type="checkbox" class="input-checkbox" />Satellite
+     Technology</label>
+    <label>
+     <input name="prefer" value="temperature-control" type="checkbox" class="input-checkbox" />Temperature
+     Control</label>
+    <label>
+     <input name="prefer" value="invest-in-green-energy" type="checkbox" class="input-checkbox" />Invest in Green
+     Energy</label>
+    <label>
+     <input name="prefer" value="plant-smartly" type="checkbox" class="input-checkbox" />Plant Smartly</label>
+    <label>
+     <input name="prefer" value="funding-space-program" type="checkbox" class="input-checkbox" />Funding Space
+     Program</label>
+    <label>
+     <input name="prefer" value="managing-natural-resources" type="checkbox" class="input-checkbox" />Managing Natural
+     Resources</label>
+    <label>
+     <input name="prefer" value="go-organic" type="checkbox" class="input-checkbox" />Go Organic</label>
+    <label>
+     <input name="prefer" value="ai-to-track-wildlife" type="checkbox" class="input-checkbox" />AI to track
+     Wildlife</label>
+   </div>
+
+   <div>
+    <p>Any comments or suggestion?</p>
+    <textarea id="comments" class="input-textarea" name="comment" row="3" cols="30"
+     placeholder="Enter your comment here..." spellcheck="true" autocomplete="on"></textarea>
+    </label>
+   </div>
+
+   <div class="form-group">
+    <button type="submit" id="submit" class="submit-button">
+     Submit
+    </button>
+   </div>
+  </form>
+ </div>
+ <footer>
+  <p class="attribution">
+   Challenge by <a href=https://www.freecodecamp.org/learn/ target="_blank">Freecodecamp</a>.
+   Coded by <a href=https://github.com/Timiphil>Timiphil</a>.
+  </p>
+ </footer>
+</body>
+
+</html>
