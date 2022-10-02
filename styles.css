@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto+Serif:opsz,wght@8..144,800&family=Trocchi&display=swap");
+
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+  /* outline: 2px solid pink; */
+}
+
+:root {
+  --color-white: #f3f3f3;
+  --Persian-indigo: #361f69;
+  --Dark-cornflower-blue: #1d3b6c;
+  --Slimy-green: #3f8e1b;
+}
+body {
+  font-family: "roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-white);
+  margin: 0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(56, 56, 138, 0.9);
+  background-image: linear-gradient(
+      120deg,
+      rgba(72, 72, 154, 0.9),
+      rgba(140, 140, 204, 0.8)
+    ),
+    url(./image/inner-solar-system-planets-johan-swanepoel.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.header {
+  display: block;
+  margin-bottom: 1.9rem;
+  padding: 0 0.7rem;
+}
+
+h1 {
+  font-size: 2em;
+  margin-block-start: 0.68em;
+  margin-block-end: 0.68em;
+  display: block;
+}
+
+h1,
+p {
+  margin-top: 0 auto;
+  margin-bottom: 0.5rem;
+}
+p {
+  font-size: 1.125rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+input,
+button,
+select,
+textarea {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+button {
+  border: none;
+}
+
+.description {
+  text-align: center;
+  font-weight: 220;
+  font-style: italic;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0 / 50%);
+}
+.clue {
+  font-size: 1rem;
+  color: #e4e4e4;
+  margin-left: 0.5rem;
+}
+.container {
+  width: 100%;
+  margin: 3.15rem auto 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+
+/* styling the form */
+form {
+  display: block;
+  margin-top: 0em;
+  background: var(--Dark-cornflower-blue);
+  border-radius: 0.5rem;
+  padding: 2.5rem 0.7rem;
+}
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+.form-group {
+  padding: 0.3rem;
+  margin: 0 auto 1.25rem auto;
+}
+label {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.form-control {
+  padding: 0.385rem 0.75rem;
+  display: block;
+  width: 100%;
+  height: 2.385rem;
+  color: #496057;
+  background-clip: padding-box;
+  background-color: #fff;
+  border: 1px solid #767a7e;
+  border-radius: 0.3rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  display: inline;
+  margin-right: 0.7rem;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+.input-textarea {
+  width: 100%;
+  min-height: 125px;
+  resize: vertical;
+  padding: 0.7rem;
+}
+.submit-button {
+  color: inherit;
+  background: var(--Slimy-green);
+  width: 100%;
+  display: block;
+  padding: 0.8rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+/* styling the attribution */
+footer {
+  padding: 1em;
+  text-align: center;
+  font-style: italic;
+}
